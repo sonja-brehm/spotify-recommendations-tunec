@@ -1,0 +1,33 @@
+/* The code in this file was written with the help of ChatGPT */
+
+.music-player {
+    position: relative;
+    display: inline-block;
+  }
+
+.music-button{
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+}
+  
+  .tooltip {
+    position: absolute;
+    bottom: -30px; /* distance of the tooltip */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s, visibility 0.2s;
+  }
+  
+  .music-player:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+  }

@@ -1,0 +1,52 @@
+/* The following code, until the end comment, is from GitHub user judygab (2022), repository "web-dev-projects",
+Available at: https://github.com/judygab/web-dev-projects/blob/main/react-form/src/components/MultiStepProgressBar.css (Accessed 01. August 2023).
+
+The style values (color etc.) have been modified*/
+.step {
+    width: 24px;
+    height: 24px;
+    font-size: 14px;
+    background-color: #EDEDED;
+    border: 2px solid #D7D7D7;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .step.completed {
+    background-color: #191919;
+    border-color: #191919;
+    color: white;
+  }
+  /* end of citation from GitHub user judygab (2022)*/
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  
+  .description {
+    font-size: 14px;
+    color: #A6A6A6;
+    text-align: center;
+    width: 120px;
+    height: 38px;
+  }
+
+  .description.completed {
+    color: #191919;
+  }
+
+  .RSPBstep {
+    flex-direction: column;
+    /* top margin is calculated by the height of the step circles + test descriptions */
+    margin-top: 43px;
+  }
+  
+  .RSPBprogressBar{
+    height: 2px;
+  }
+  

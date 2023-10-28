@@ -1,0 +1,11 @@
+.logo{
+    height: 35px;
+    position: absolute;
+    top: 5vh;
+    left: 4vw;
+}
+
+.logo img{
+    height: 100%;
+    object-fit: cover;
+}

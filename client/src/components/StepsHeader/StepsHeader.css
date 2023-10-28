@@ -1,0 +1,15 @@
+.stepsheader{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: top;
+    width: 100%;
+    min-width: 1000px;
+    height: 80px;
+    margin-top: 5vh;
+}
+
+.stepsheader__progressbar{
+    margin-top: 13px;
+    margin-left: -(4vw + 60px);
+}

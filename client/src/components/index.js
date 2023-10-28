@@ -1,0 +1,9 @@
+export {default as StepsHeader} from './StepsHeader/StepsHeader.js';
+export {default as ReadMore} from './ReadMore/ReadMore.js';
+export {default as Logo} from './Logo/Logo.js';
+export {default as ChooseTracks} from './ChooseTracks/ChooseTracks.js';
+export {default as ChoosePreferences} from './ChoosePreferences/ChoosePreferences.js';
+export {default as RangeSlider} from './RangeSlider/RangeSlider.js';
+export {default as SongPreviewPlayer} from './SongPreviewPlayer/SongPreviewPlayer.js';
+export {default as SearchField} from './SearchField/SearchField.js';
+export {default as SeedTracks} from './SeedTracks/SeedTracks.js';

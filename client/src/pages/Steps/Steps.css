@@ -1,0 +1,43 @@
+/* Grid */
+.steps {
+  border: 1px solid white; /* necessary to prevent vertical scrolling when switching between steps*/
+}
+
+.steps__outer-container {
+  margin-top: 40px;
+  margin-left: 4vw;
+  margin-right: 4vw;
+}
+
+.steps__grid-container {
+  display: grid;
+  grid-template-areas:
+    "description-area button-area"
+    "main main";
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin: auto;
+  max-width: 1200px;
+  min-width: 850px;
+}
+
+.description-area {
+  grid-area: description-area;
+}
+.butto-area {
+  grid-area: button-area;
+}
+.main {
+  grid-area: main;
+}
+
+/* Other */
+.steps p {
+  max-width: 500px;
+}
+
+.button-area__button {
+  float: right;
+  margin-left: 8px;
+  margin-top: 2px;
+}

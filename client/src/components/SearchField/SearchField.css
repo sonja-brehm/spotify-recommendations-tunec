@@ -1,0 +1,94 @@
+.searchField{
+  width: 100%;
+}
+
+.searchField p {
+  margin: 0px;
+}
+
+.searchField__field{
+    border: 1px solid #000000;
+    border-radius: 50px;
+    width: calc(100% - 40px);
+    padding: 8px 20px;
+  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  input[type=text]{
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+  
+    width: 100%;
+    border: none;
+  }
+  
+  ::placeholder {
+    color: #A6A6A6;
+  }
+  
+  :focus{
+    outline: none;}
+  
+  .searchField__overlay{
+    position: relative;
+    width: 100%;
+    display: block;
+  }
+  
+  .searchField__results{
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #D7D7D7;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    display: block;
+    height: 300px; 
+    overflow-y: auto; /* vertical scrolling */
+  }
+  
+  .searchField__track{
+    border-bottom: 1px solid #D7D7D7;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+    width: calc(100%-48px);
+  
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    cursor: pointer;
+  }
+  
+  .searchField__track:hover{
+    background-color: #ededed;
+  }
+  
+  .searchField__track:active{
+    background-color: #dadada;
+  }
+  
+  .searchField__track-title{
+    width: 50%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 16px;
+  
+  }
+  
+  .searchField__track-artist{
+    width: 50%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 16px;
+  }

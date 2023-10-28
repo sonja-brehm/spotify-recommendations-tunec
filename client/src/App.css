@@ -1,0 +1,152 @@
+/* General styles that are used across the whole app.*/
+
+.App {
+  background-color: #ffffff;
+}
+
+.App-header {
+  min-height: 100vh;
+  color: #191919;
+}
+
+/*Text Styles*/
+h1 {
+  font-family: "swear-display", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 50px;
+  line-height: 60px;
+  margin: 0px;
+}
+
+h2 {
+  font-family: "swear-display", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 35px;
+  margin: 0px;
+}
+
+h3 {
+  font-family: "swear-display", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 28px;
+  margin: 0px;
+}
+
+h4 {
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 16px;
+}
+
+p {
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+}
+
+.p-grey {
+  color: #a6a6a6;
+  font-size: 14px;
+}
+
+.p-grey-16 {
+  color: #a6a6a6;
+}
+
+/* Button Sizes and States */
+
+button {
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  background-color: #191919;
+  color: #ffffff;
+}
+
+button:hover {
+  background-color: #3e3e3e;
+}
+
+button:active {
+  color: #000000;
+}
+
+button:disabled {
+  background-color: #ededed;
+  color: #a6a6a6;
+  cursor: not-allowed;
+}
+
+.button--L {
+  font-size: 18px;
+  padding: 10px 16px;
+  margin-top: 24px;
+}
+
+.button--M {
+  font-size: 16px;
+  padding: 8px 12px;
+}
+
+.button--S {
+  font-weight: 500;
+  font-size: 15px;
+  padding: 4px 10px;
+}
+
+/* Secondary Button and States */
+
+.button-secondary--M {
+  border: solid 1px #191919;
+  background-color: #ffffff;
+  color: #191919;
+  font-size: 16px;
+  padding: 8px 12px;
+}
+
+.button-secondary--M:disabled {
+  background-color: #ffffff;
+  border-color: #d7d7d7;
+  color: #c0c0c0;
+  cursor: not-allowed;
+}
+
+.button-secondary--M:hover {
+  background-color: #ededed;
+}
+
+.button-secondary--M:active {
+  background-color: #dadada;
+}
+
+.button-secondary--S {
+  border: solid 1px #191919;
+  background-color: #ffffff;
+  color: #191919;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 3px 9px;
+}
+
+.button-secondary--S:disabled {
+  background-color: #ffffff;
+  border-color: #d7d7d7;
+  color: #a6a6a6;
+  cursor: not-allowed;
+}
+
+.button-secondary--S:hover {
+  background-color: #ededed;
+}
+
+.button-secondary--S:active {
+  background-color: #dadada;
+}

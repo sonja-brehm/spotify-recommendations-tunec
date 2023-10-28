@@ -1,0 +1,193 @@
+/* Grid */
+.recommendations{
+  padding-top: 30px;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  padding-bottom: 5vh;
+}
+
+.recommendations__grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "settings results";
+  grid-template-columns: 0.55fr 1fr;
+  grid-template-rows: calc(5vh + 35px) auto;
+  row-gap: 24px;
+  margin: auto;
+  max-width: 1300px;
+  min-width: 1100px;
+  min-height:100vh;
+}
+
+/*.recommendations__grid-container > div {
+  border: 1px solid black;
+}*/
+
+.recommendations__header {grid-area: header;}
+.recommendations__settings {
+  grid-area: settings;
+  padding-right: 40px;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.recommendations__results {
+  grid-area: results;
+  border-left: #D7D7D7 1px solid;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+
+/* General styles */
+.recommendations h3{
+  font-size: 25px;
+}
+
+.recommendations_h-space-top{
+  margin-top: 32px;
+}
+
+.recommendations_h-space-bottom{
+  margin-bottom: 16px;
+}
+
+
+/* Preferences */
+.recommendations__box {
+  border: 2px solid black;
+  border-radius: 16px;
+  padding: 16px 24px 24px;
+  margin-top: 33px;
+}
+
+.recommendations_preference-divider{
+  height: 1px;
+  width: 100%;
+  background-color: #D7D7D7;
+}
+
+/* Overlay after 5 songs have been saved*/
+.recommendations__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.recommendations__overlay-content {
+  background-color: white;
+  padding: 5vw;
+  border-radius: 20px;
+}
+
+.recommendations__download-button{
+  width: 170px;
+  font-size: 16px;
+  padding: 8px 12px;
+  margin-top: 3px;
+  background-color: #6E59E8;
+}
+.recommendations__download-button:hover{
+  background-color: #533cd9;
+}
+
+/* Results */
+.recommendations__track-container{
+  border-bottom: 1px solid #D7D7D7;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-right: 16px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  /*flex-wrap: wrap;*/
+  cursor: default;
+}
+
+.recommendations__track-container:hover{
+  background-color: #ededed;
+}
+
+.recommendations__play-button{
+  margin-left: 16px;
+}
+
+.recommendations__track-title{
+  margin: 0px;
+  width: calc(30%);
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.recommendations__track-artist{
+  width: calc(25%);
+  margin: 0px;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.recommendations__track-link{
+  margin: 0px;
+  width: 110px;
+}
+
+.recommendations a{
+  text-decoration: none;
+  color: #826EF7;
+  font-size: 14px;
+  margin-right: 16px;
+}
+
+.recommendations a:hover {
+  text-decoration: underline;
+}
+
+.recommendations a:visited {
+  color: #513fb8;
+}
+
+.recommendations__track-heart{
+  cursor: pointer;
+  position: relative;
+  top: 2px;
+}
+
+
+.recommendations__tooltip {
+  position: absolute;
+  bottom: -25px; /* distance of the tooltip */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+
+.recommendations__track-heart:hover .recommendations__tooltip {
+  visibility: visible;
+  opacity: 1;
+}

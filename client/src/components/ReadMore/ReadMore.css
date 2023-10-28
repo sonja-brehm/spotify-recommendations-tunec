@@ -1,0 +1,29 @@
+.readmore{
+    max-width: 503px;
+}
+
+.readmore__interactiveField{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    gap: 4px;
+    height: 16px;
+    
+}
+
+.readmore p{
+    margin-bottom: 16px;
+    margin-top: 0px;
+}
+
+.readmore__interactiveField{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}

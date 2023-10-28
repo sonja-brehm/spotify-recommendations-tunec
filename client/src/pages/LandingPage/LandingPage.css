@@ -1,0 +1,35 @@
+.landingpage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(../../images/background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.landingpage__box{
+    border: solid 2px black;
+    border-radius: 20px;
+    margin-left: 20vw;
+    padding: 40px 50px 45px;
+    width: 460px;
+    height: fit-content;
+    background-color: white;
+}
+
+.landingpage h1{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.landingpage__h-color{
+    background-color: #EE8F57;
+    padding-bottom: 3px;
+}
+
+.landingpage p{
+    font-size: 18px;
+    margin-bottom: 0px;
+    margin-top:24px;
+}
