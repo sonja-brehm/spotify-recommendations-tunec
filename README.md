@@ -1,4 +1,4 @@
-# Spotify recommendations – tunec
+# tunec – Spotify recommendations
 A web app that uses the Spotify API to give you more control over song recommendations by offering the ability to select multiple seed tracks and influence some musical attributes.
 
 This project was developed as part of the thesis of Sonja Brehm, MSc Data Science and AI for the Creative Industries, 2023; Supervisor: Dr Louis McCallum. 
